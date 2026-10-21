@@ -1,0 +1,86 @@
+[
+ {
+  "args": [
+   "check",
+   "pinfl",
+   "12345678901234"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"kind\": \"pinfl\", \"masked\": \"**********1234\", \"normalized\": \"12345678901234\", \"ok\": true}"
+ },
+ {
+  "args": [
+   "check",
+   "pinfl",
+   "1234 5678 9012 34"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"kind\": \"pinfl\", \"masked\": \"**********1234\", \"normalized\": \"12345678901234\", \"ok\": true}"
+ },
+ {
+  "args": [
+   "check",
+   "pinfl",
+   "1234567890123"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"error\": \"expected 14 digits\", \"kind\": \"pinfl\", \"masked\": \"*********0123\", \"ok\": false}",
+  "code": 1
+ },
+ {
+  "args": [
+   "check",
+   "stir",
+   "123456789"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"kind\": \"stir\", \"masked\": \"*****6789\", \"normalized\": \"123456789\", \"ok\": true}"
+ },
+ {
+  "args": [
+   "check",
+   "stir",
+   "12345678A"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"error\": \"expected 9 digits\", \"kind\": \"stir\", \"masked\": \"*****678A\", \"ok\": false}",
+  "code": 1
+ },
+ {
+  "args": [
+   "check",
+   "passport",
+   "aa 1234567"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"kind\": \"passport\", \"masked\": \"*****4567\", \"normalized\": \"AA1234567\", \"ok\": true}"
+ },
+ {
+  "args": [
+   "check",
+   "passport",
+   "A1234567"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"error\": \"expected 2 Latin letters + 7 digits\", \"kind\": \"passport\", \"masked\": \"****4567\", \"ok\": false}",
+  "code": 1
+ },
+ {
+  "args": [
+   "check",
+   "auto",
+   "AB0000001"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"kind\": \"passport\", \"masked\": \"*****0001\", \"normalized\": \"AB0000001\", \"ok\": true}"
+ },
+ {
+  "args": [
+   "check",
+   "auto",
+   "00000000000000"
+  ],
+  "out": "{\"checksum\": \"not-checked\", \"kind\": \"pinfl\", \"masked\": \"**********0000\", \"normalized\": \"00000000000000\", \"ok\": true}"
+ },
+ {
+  "args": [
+   "check",
+   "auto",
+   "12345"
+  ],
+  "out": "{\"error\": \"matches none of: pinfl (14 digits), stir (9 digits), passport (2 Latin letters + 7 digits)\", \"kind\": \"unknown\", \"masked\": \"*2345\", \"ok\": false}",
+  "code": 1
+ }
+]

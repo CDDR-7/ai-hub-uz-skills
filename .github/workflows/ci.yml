@@ -1,0 +1,65 @@
+# Gate for every PR and push to main:
+#   check   — marketplace structure, SKILL.md frontmatter (rules of `uz-gate validate`), LICENSE/README, skill tests
+#   claude  — `claude plugin validate --strict` for the marketplace and every pack
+#   secrets — Gitleaks over the tree and the PR commits
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        python: ["3.9", "3.13"] # the oldest version the skill scripts promise, and a current one
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "${{ matrix.python }}" }
+      - name: Skill tests
+        run: python3 scripts/check.py
+
+  claude:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLAUDE_CODE_VERSION: 2.1.306
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Validate marketplace and packs
+        run: |
+          npx -y "@anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}" plugin validate --strict .
+          for p in plugins/*/; do npx -y "@anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}" plugin validate --strict "$p"; done
+
+  secrets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GITLEAKS_VERSION: 8.28.0
+      GITLEAKS_SHA256: a65b5253807a68ac0cafa4414031fd740aeb55f54fb7e55f386acb52e6a840eb
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Install Gitleaks
+        run: |
+          curl -fsSL --retry 3 -o /tmp/gitleaks.tgz \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          echo "${GITLEAKS_SHA256}  /tmp/gitleaks.tgz" | sha256sum -c -
+          tar -xzf /tmp/gitleaks.tgz -C /tmp gitleaks
+      - name: Gitleaks (working tree)
+        run: /tmp/gitleaks dir . --no-banner --redact
+      - name: Gitleaks (history)
+        run: /tmp/gitleaks git . --no-banner --redact
