@@ -1,0 +1,156 @@
+[
+ {
+  "args": [
+   "format",
+   "1234567.89"
+  ],
+  "out": "1 234 567,89 сум"
+ },
+ {
+  "args": [
+   "format",
+   "1 234 567,89",
+   "--lang",
+   "uz"
+  ],
+  "out": "1 234 567,89 soʻm"
+ },
+ {
+  "args": [
+   "format",
+   "1,234,567.89",
+   "--code"
+  ],
+  "out": "1 234 567,89 UZS"
+ },
+ {
+  "args": [
+   "format",
+   "-500"
+  ],
+  "out": "-500 сум"
+ },
+ {
+  "args": [
+   "format",
+   "0.005"
+  ],
+  "out": "0,01 сум",
+  "note": "tiyin rounded half up"
+ },
+ {
+  "args": [
+   "format",
+   "1.234.567"
+  ],
+  "out": "1 234 567 сум",
+  "note": "repeated separator = thousands"
+ },
+ {
+  "args": [
+   "format",
+   "12,5"
+  ],
+  "out": "12,50 сум",
+  "note": "single comma = decimal"
+ },
+ {
+  "args": [
+   "words",
+   "1234567.89"
+  ],
+  "out": "Один миллион двести тридцать четыре тысячи пятьсот шестьдесят семь сумов 89 тийинов"
+ },
+ {
+  "args": [
+   "words",
+   "1234567.89",
+   "--lang",
+   "uz"
+  ],
+  "out": "Bir million ikki yuz oʻttiz toʻrt ming besh yuz oltmish yetti soʻm 89 tiyin"
+ },
+ {
+  "args": [
+   "words",
+   "21"
+  ],
+  "out": "Двадцать один сум 00 тийинов"
+ },
+ {
+  "args": [
+   "words",
+   "2"
+  ],
+  "out": "Два сума 00 тийинов"
+ },
+ {
+  "args": [
+   "words",
+   "5"
+  ],
+  "out": "Пять сумов 00 тийинов"
+ },
+ {
+  "args": [
+   "words",
+   "1001"
+  ],
+  "out": "Одна тысяча один сум 00 тийинов",
+  "note": "тысяча is feminine: одна"
+ },
+ {
+  "args": [
+   "words",
+   "2000000"
+  ],
+  "out": "Два миллиона сумов 00 тийинов"
+ },
+ {
+  "args": [
+   "words",
+   "11000"
+  ],
+  "out": "Одиннадцать тысяч сумов 00 тийинов",
+  "note": "11-14 take the many form"
+ },
+ {
+  "args": [
+   "words",
+   "0"
+  ],
+  "out": "Ноль сумов 00 тийинов"
+ },
+ {
+  "args": [
+   "words",
+   "0.01"
+  ],
+  "out": "Ноль сумов 01 тийин"
+ },
+ {
+  "args": [
+   "words",
+   "112.5"
+  ],
+  "out": "Сто двенадцать сумов 50 тийинов"
+ },
+ {
+  "args": [
+   "words",
+   "100",
+   "--lang",
+   "uz"
+  ],
+  "out": "Bir yuz soʻm 00 tiyin"
+ },
+ {
+  "args": [
+   "words",
+   "1000000000",
+   "--lang",
+   "uz"
+  ],
+  "out": "Bir milliard soʻm 00 tiyin"
+ }
+]

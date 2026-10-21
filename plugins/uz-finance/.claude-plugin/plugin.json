@@ -1,0 +1,17 @@
+{
+  "name": "uz-finance",
+  "version": "0.1.0",
+  "description": "Uzbek soʻm (UZS) amounts: formatting and amounts in words (ru, uz).",
+  "author": {
+    "name": "ai-point.uz contributors"
+  },
+  "homepage": "https://ai-point.uz",
+  "repository": "https://github.com/CDDR-7/ai-hub-uz-skills",
+  "license": "MIT",
+  "keywords": [
+    "uzbek",
+    "uzs",
+    "currency",
+    "amount-in-words"
+  ]
+}

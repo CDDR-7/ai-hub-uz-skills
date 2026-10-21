@@ -1,0 +1,507 @@
+[
+ {
+  "args": [
+   "--to",
+   "latn",
+   "Ўзбекистон Республикаси"
+  ],
+  "out": "Oʻzbekiston Respublikasi"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Oʻzbekiston Respublikasi"
+  ],
+  "out": "Ўзбекистон Республикаси"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "Тошкент шаҳри"
+  ],
+  "out": "Toshkent shahri"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Toshkent shahri"
+  ],
+  "out": "Тошкент шаҳри"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "ғалаба"
+  ],
+  "out": "gʻalaba"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "gʻalaba"
+  ],
+  "out": "ғалаба"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "ер"
+  ],
+  "out": "yer"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "yer"
+  ],
+  "out": "ер"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "эшик"
+  ],
+  "out": "eshik"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "eshik"
+  ],
+  "out": "эшик"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "поезд"
+  ],
+  "out": "poyezd"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "poyezd"
+  ],
+  "out": "поезд"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "маъно"
+  ],
+  "out": "maʼno"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "maʼno"
+  ],
+  "out": "маъно"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "шеър"
+  ],
+  "out": "sheʼr"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "sheʼr"
+  ],
+  "out": "шеър"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "Исҳоқ"
+  ],
+  "out": "Isʼhoq"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Isʼhoq"
+  ],
+  "out": "Исҳоқ"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "йўл"
+  ],
+  "out": "yoʻl"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "yoʻl"
+  ],
+  "out": "йўл"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "янги"
+  ],
+  "out": "yangi"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "yangi"
+  ],
+  "out": "янги"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "яхши"
+  ],
+  "out": "yaxshi"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "yaxshi"
+  ],
+  "out": "яхши"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "юлдуз"
+  ],
+  "out": "yulduz"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "yulduz"
+  ],
+  "out": "юлдуз"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "халқ"
+  ],
+  "out": "xalq"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "xalq"
+  ],
+  "out": "халқ"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "ҳаёт"
+  ],
+  "out": "hayot"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "hayot"
+  ],
+  "out": "ҳаёт"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "Европа"
+  ],
+  "out": "Yevropa"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Yevropa"
+  ],
+  "out": "Европа"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "ёз"
+  ],
+  "out": "yoz"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "yoz"
+  ],
+  "out": "ёз"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "санъат"
+  ],
+  "out": "sanʼat"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "sanʼat"
+  ],
+  "out": "санъат"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "таълим"
+  ],
+  "out": "taʼlim"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "taʼlim"
+  ],
+  "out": "таълим"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "оила"
+  ],
+  "out": "oila"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "oila"
+  ],
+  "out": "оила"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "мўъжиза"
+  ],
+  "out": "moʻʼjiza"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "moʻʼjiza"
+  ],
+  "out": "мўъжиза"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "Аэропорт"
+  ],
+  "out": "Aeroport"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Aeroport"
+  ],
+  "out": "Аэропорт"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "ШАҲАР"
+  ],
+  "out": "SHAHAR"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "SHAHAR"
+  ],
+  "out": "ШАҲАР"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "Шаҳар"
+  ],
+  "out": "Shahar"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Shahar"
+  ],
+  "out": "Шаҳар"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "ЎЗБЕКИСТОН"
+  ],
+  "out": "OʻZBEKISTON"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "OʻZBEKISTON"
+  ],
+  "out": "ЎЗБЕКИСТОН"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "Чой"
+  ],
+  "out": "Choy"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Choy"
+  ],
+  "out": "Чой"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "милиция"
+  ],
+  "out": "militsiya",
+  "note": "ц after a vowel -> ts"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "цирк"
+  ],
+  "out": "sirk",
+  "note": "ц at word start -> s"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "концерт"
+  ],
+  "out": "konsert",
+  "note": "ц after a consonant -> s"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "объект"
+  ],
+  "out": "obyekt",
+  "note": "ъ before е is dropped"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "пальто"
+  ],
+  "out": "palto",
+  "note": "ь is dropped"
+ },
+ {
+  "args": [
+   "--to",
+   "latn",
+   "--ascii",
+   "Ўзбекистон, маъно"
+  ],
+  "out": "O'zbekiston, ma'no"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "O'zbekiston, ma'no"
+  ],
+  "out": "Ўзбекистон, маъно",
+  "note": "ASCII apostrophes"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Oʻzbekiston va gʻalaba"
+  ],
+  "out": "Ўзбекистон ва ғалаба"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "Sayt: https://example.uz/yangi"
+  ],
+  "out": "Сайт: https://example.uz/yangi",
+  "note": "URLs are kept"
+ },
+ {
+  "args": [
+   "--to",
+   "cyrl",
+   "poet"
+  ],
+  "out": "поэт",
+  "note": "e after a vowel -> э"
+ }
+]

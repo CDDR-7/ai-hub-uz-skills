@@ -1,0 +1,55 @@
+{
+  "name": "ai-point-uz",
+  "owner": {
+    "name": "ai-point.uz"
+  },
+  "metadata": {
+    "description": "Skills for Uzbekistan: Uzbek language, UZS amounts, local identifiers. Catalog: https://ai-point.uz/skills",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "uz-lang",
+      "source": "./plugins/uz-lang",
+      "description": "Uzbek language: Latin ↔ Cyrillic transliteration (1995 rules).",
+      "version": "0.1.0",
+      "category": "lang",
+      "keywords": [
+        "uzbek",
+        "transliteration",
+        "latin",
+        "cyrillic"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "uz-finance",
+      "source": "./plugins/uz-finance",
+      "description": "Uzbek soʻm (UZS) amounts: formatting and amounts in words (ru, uz).",
+      "version": "0.1.0",
+      "category": "finance",
+      "keywords": [
+        "uzbek",
+        "uzs",
+        "currency",
+        "amount-in-words"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "uz-docs",
+      "source": "./plugins/uz-docs",
+      "description": "Uzbek identifiers: PINFL, STIR, passport — format checks and masking.",
+      "version": "0.1.0",
+      "category": "docs",
+      "keywords": [
+        "uzbek",
+        "pinfl",
+        "stir",
+        "passport",
+        "validation"
+      ],
+      "license": "MIT"
+    }
+  ]
+}
