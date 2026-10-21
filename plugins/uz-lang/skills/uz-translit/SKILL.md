@@ -1,6 +1,11 @@
 ---
 name: uz-translit
 description: Transliterate Uzbek text between Latin (oʻzbek lotin alifbosi, 1995 rules) and Cyrillic script. Use when the user asks to convert Uzbek text to Latin or Cyrillic, to "lotinga oʻgir" / "kirillga oʻgir", to fix oʻ/gʻ apostrophes, or to prepare the same text in both Uzbek scripts.
+license: MIT
+metadata:
+  description-ru: "Транслитерация узбекского текста между латиницей (правила 1995 года) и кириллицей в обе стороны."
+  description-uz-Latn: "Oʻzbekcha matnni lotin (1995-yil qoidalari) va kirill yozuvlari orasida ikki tomonga oʻgirish."
+  description-uz-Cyrl: "Ўзбекча матнни лотин (1995-йил қоидалари) ва кирилл ёзувлари орасида икки томонга ўгириш."
 ---
 
 # Uzbek Latin ↔ Cyrillic
@@ -39,6 +44,7 @@ Latin → Cyrillic loses information the script cannot recover. Fix these after 
 - **ь and ъ in loanwords.** palto → палто, but the word is пальто; obyekt → обект, but the word is объект.
 - **e after a vowel** in Uzbek (not loan) words: the script writes э. Check that the word is spelled that way.
 - **Proper names, brands, code, quotes in another language** — do not transliterate them unless the user asks.
+- **Latin acronyms and codes** (UZS, ID, ISO, IT) stay in Latin letters in Cyrillic text; the script converts them, so put them back: `UZS`, not `УЗС`.
 
 Cyrillic → Latin is exact for native words; the only judgment calls are loanwords with ц (the vowel rule is the common spelling) and names that have an established Latin form.
 

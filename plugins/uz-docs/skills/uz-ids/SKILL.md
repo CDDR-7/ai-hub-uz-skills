@@ -1,6 +1,11 @@
 ---
 name: uz-ids
 description: Check the format of Uzbek identifiers — PINFL / JShShIR (personal number), STIR / INN (taxpayer number), passport and ID card numbers — and normalize and mask them. Use when a form, spreadsheet, contract or code handles these identifiers and needs validation, cleanup or test data.
+license: MIT
+metadata:
+  description-ru: "Проверка формата ПИНФЛ, СТИР (ИНН), серии и номера паспорта или ID-карты: нормализация и маскирование."
+  description-uz-Latn: "JShShIR, STIR, pasport va ID-karta raqamlari formatini tekshirish, normallashtirish va yashirish."
+  description-uz-Cyrl: "ЖШШИР, СТИР, паспорт ва ID-карта рақамлари форматини текшириш, нормаллаштириш ва яшириш."
 ---
 
 # Uzbek identifiers

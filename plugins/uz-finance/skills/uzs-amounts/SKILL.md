@@ -1,6 +1,11 @@
 ---
 name: uzs-amounts
 description: Format Uzbek soʻm (UZS) amounts and write them out in words in Russian or Uzbek, with tiyin. Use for invoices, contracts, payment orders, receipts or any text that needs "1 234 567,89 сум", "сумма прописью" or "soʻm soʻz bilan" for UZS.
+license: MIT
+metadata:
+  description-ru: "Суммы в сумах (UZS): формат «1 234 567,89 сум» и сумма прописью на русском и узбекском, с тийинами."
+  description-uz-Latn: "Soʻmdagi (UZS) summalar: «1 234 567,89 soʻm» formati va summani rus hamda oʻzbek tillarida soʻz bilan yozish."
+  description-uz-Cyrl: "Сўмдаги (UZS) суммалар: «1 234 567,89 сўм» формати ва суммани рус ҳамда ўзбек тилларида сўз билан ёзиш."
 ---
 
 # UZS amounts
